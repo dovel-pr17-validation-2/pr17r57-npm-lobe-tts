@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "module": "es2022",
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es6",
+    "types": ["vitest/globals"],
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "@/*": ["./src/*"],
+      "@lobehub/tts": ["./src"],
+      "@lobehub/tts/*": ["src/*"],
+      "@lobehub/tts/react": ["./src/react"],
+      "@lobehub/tts/react/*": ["./src/react/*"],
+      "@lobehub/tts/server": ["./src/server"],
+      "@lobehub/tts/server/*": ["./src/server/*"]
+    }
+  },
+  "exclude": [],
+  "include": ["src", "docs", "tests", ".dumirc.ts", "tsdown.config.ts"]
+}
